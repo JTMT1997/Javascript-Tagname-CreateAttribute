@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container">
+			
+			
+				<nav >
+					<ol class="breadcrumb" >
+						<button onclick="klik1()" >Home</button>
+						<button onclick="klik2()" >Profil</button>
+						<button onclick="klik3()" >Data</button>
+						<button onclick="klik4()" >Contact</button>
+						<button onclick="a()">Test</button>
+					</ol>
+				</nav>
+			<div  >
+				<p style="background: red";  > </p>
+				<h1 style="background-color: yellow;"></h1>
+				
+			</div>
+		</div>
+		
+		<script >
+			function a () {
+				var r = document.getElementsByTagName('h1')[0];
+				var p = document.createAttribute("id");
+				p.value="h1";
+				r.attributes.setNamedItem(p);
+				document.getElementById('h1').innerHTML="Test";
+			}
+
+			function klik1 () {
+				var a = document.getElementsByTagName("p")[0];
+			var b = document.createAttribute("id");
+			b.value = "p1";
+			a.attributes.setNamedItem(b);
+			document.getElementById("p1").innerHTML = "Home";
+			}
+			
+			function klik2 () {
+				var c = document.getElementsByTagName("p")[0];
+			var d = document.createAttribute("id");
+			d.value = "p1";
+			c.attributes.setNamedItem(d);
+			document.getElementById("p1").innerHTML = "Profil";
+			}
+			function klik3 () {
+				var e = document.getElementsByTagName("p")[0];
+			var f = document.createAttribute("id");
+			f.value ="p1";
+			e.attributes.setNamedItem(f);
+			document.getElementById("p1").innerHTML = "Data";
+			}
+			function klik4 () {
+				var e = document.getElementsByTagName("p")[0];
+			var f = document.createAttribute("id");
+			f.value ="p1";
+			e.attributes.setNamedItem(f);
+			document.getElementById("p1").innerHTML = "Contact";
+			}
+		</script>
+		
+	</body>
+</html>
